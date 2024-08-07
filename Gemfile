@@ -87,3 +87,10 @@ end
   gem "rolify"
 
   gem "pundit"
+
+
+gem "sassc-rails"
+gem "image_processing"
+gem 'searchkick'
+gem "opensearch-ruby"
+# gem "elasticsearch" 

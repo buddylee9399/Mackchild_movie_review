@@ -34,4 +34,10 @@ class User < ApplicationRecord
         self.add_role(:customer) if self.roles.blank?
       end
     end  
+
+  def name
+    self.email.split('@')[0]
+  end
+  has_many :movies, dependent: :destroy
+  has_many :reviews, dependent: :destroy
 end
